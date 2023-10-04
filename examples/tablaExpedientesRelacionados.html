@@ -1,0 +1,514 @@
+//Ejemplo de tabla de expedientes relacionados una vez iniciada la sesión en el portal del PJN
+<div class="row">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12"><div id="j_idt173" class="row">
+<style>
+  table > tbody > tr > td > div > a.btn {
+    width: inherit !important;
+    padding: 6px 12px !important;
+    height: inherit !important;
+  }
+</style><div id="tablaConsultaLista:dejarNotaPopupID:dejarNotaPopup" style="visibility: hidden;"><div class="rf-pp-shade" id="tablaConsultaLista:dejarNotaPopupID:dejarNotaPopup_shade" style="z-index:100;"><button class="rf-pp-btn" id="tablaConsultaLista:dejarNotaPopupID:dejarNotaPopupFirstHref" name="tablaConsultaLista:dejarNotaPopupID:dejarNotaPopupfirstHref"></button></div><div class="rf-pp-cntr no-padding no-margin background-gradient-grey col-lg-5 col-sm-5 col-sm-11 col-xs-11" id="tablaConsultaLista:dejarNotaPopupID:dejarNotaPopup_container" style="position: fixed; z-index:100; "><div class="rf-pp-shdw" id="tablaConsultaLista:dejarNotaPopupID:dejarNotaPopup_shadow" style="opacity: 0.1;"></div><div class="rf-pp-cnt-scrlr" id="tablaConsultaLista:dejarNotaPopupID:dejarNotaPopup_content_scroller"><div class="rf-pp-cnt" id="tablaConsultaLista:dejarNotaPopupID:dejarNotaPopup_content">
+<form id="tablaConsultaLista:dejarNotaPopupID:dejarNotaForm" name="tablaConsultaLista:dejarNotaPopupID:dejarNotaForm" method="post" action="/scw/consultaListaRelacionados.seam" class="editForm" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="tablaConsultaLista:dejarNotaPopupID:dejarNotaForm" value="tablaConsultaLista:dejarNotaPopupID:dejarNotaForm">
+
+          <div div="panelDejarNota" class="panel panel-default no-margin" role="alert">
+        <div id="libroNotas" class="panel-heading"><strong>Libro de Notas Electrónicas</strong></div>
+      </div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="9029703580757104579:1213337114790337233" autocomplete="off">
+</form></div></div></div><script type="text/javascript">new RichFaces.ui.PopupPanel("tablaConsultaLista:dejarNotaPopupID:dejarNotaPopup",{"autosized":true} );</script></div><div id="tablaConsultaLista:tablaConsulta">
+<script>
+$(function() {
+  $(".btn.btn-default.dropdown-toggle").mouseenter(
+         function(){ $(this).parent().addClass("open"); }
+  );
+
+  $(".btn.btn-default.dropdown-toggle").click(
+           function(){ return false;; }
+  );
+  
+  $(".btn-group").mouseleave(
+         function(){ $(this).removeClass("open"); }
+  );
+});
+</script>
+<form id="tablaConsultaLista:tablaConsultaForm" name="tablaConsultaLista:tablaConsultaForm" method="post" action="/scw/consultaListaRelacionados.seam" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="tablaConsultaLista:tablaConsultaForm" value="tablaConsultaLista:tablaConsultaForm">
+<table id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable" class="table-striped table-responsive border-dark-grey-sm width-all font-size-md">
+<thead>
+<tr>
+<th class="background-gradient-blue font-color-white font-size-md-ext text-center min-height-header" scope="col">Expediente</th>
+<th class="background-gradient-blue font-color-white font-size-md-ext text-center min-height-header" scope="col">Dependencia</th>
+<th class="background-gradient-blue font-color-white font-size-md-ext text-center min-height-header" scope="col">Carátula</th>
+<th class="background-gradient-blue font-color-white font-size-md-ext text-center min-height-header" scope="col">Situación</th>
+<th class="background-gradient-blue font-color-white font-size-md-ext text-center min-height-header" scope="col">Últ. Act.</th>
+<th class="background-gradient-blue font-color-white font-size-md-ext text-center min-height-header" scope="col">&nbsp;</th>
+<th class="background-gradient-blue font-color-white font-size-md-ext text-center min-height-header" scope="col"><div class="rf-p tooltip-text no-border" id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:j_idt249"><div class="rf-p-b rich-laguna-panel-no-header" id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:j_idt249_body">
+        <i aria-hidden="true" class="fa fa-star-half-o" style="font-size: 12pt;"></i>
+        <span class="sr-only">Agregar a favoritos: </span><span id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:j_idt251" style="display: none;"><span id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:j_idt251:wrp" class="rf-tt" style="z-index:1000"><span id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:j_idt251:cntr" class="rf-tt-cntr"><span id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:j_idt251:content" class="rf-tt-cnt">
+                <span style="white-space:nowrap">
+                    <span class="color-blue"><strong>Agregar/Quitar a Favoritos</strong></span>
+                    <span class="sr-only">Quitar de favoritos: </span>
+                    <br> 
+                    Utilice esta opcion para agregar/quitar de manera rapida y facil cualquiera
+                    <br>
+                    de sus expedientes relacionados a su lista de "mis expedientes".
+                </span></span></span></span></span></div></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="column"> CIV 007853/2018</td>
+<td class="column">JUZGADO CIVIL 24 - SECRETARIA Nº 48</td>
+<td class="column">ALMAGRO, HERMAN Y OTRO S/SUCESION AB-INTESTATO</td>
+<td class="column">EN LETRA</td>
+<td class="column">16/08/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:0:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:0:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:0:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:0:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:0:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:0:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 068987/2021</td>
+<td class="column">JUZGADO CIVIL 62</td>
+<td class="column">ALTIERI, JORGE GABRIEL C/ CONS DE PROP CHARCAS 5121/25/27 S/CONSIGNACION DE EXPENSAS</td>
+<td class="column">EN LETRA</td>
+<td class="column">26/09/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:1:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:1:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:1:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:1:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:1:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:1:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 093246/2019</td>
+<td class="column">JUZGADO CIVIL 20 - SECRETARIA Nº 40</td>
+<td class="column">ARIAS, HAYDEE AZUCENA Y OTRO S/SUCESION AB-INTESTATO</td>
+<td class="column">EN LETRA</td>
+<td class="column">15/03/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:2:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:2:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:2:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:2:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:2:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:2:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 105046/2021</td>
+<td class="column">JUZGADO CIVIL 104 - SECRETARIA Nº 42</td>
+<td class="column">BELOFF, NINA MATILDE S/SUCESION AB-INTESTATO</td>
+<td class="column">EN LETRA</td>
+<td class="column">29/09/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:3:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:3:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:3:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:3:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:3:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:3:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star-o"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 046709/2022</td>
+<td class="column">JUZGADO CIVIL 8 - SECRETARIA Nº 15</td>
+<td class="column">BORDON BRITEZ, EUSTACIA S/INFORMACION SUMARIA</td>
+<td class="column">EN LETRA</td>
+<td class="column">5/09/2022</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:4:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:4:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:4:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:4:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:4:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:4:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star-o"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 071010/1994</td>
+<td class="column">JUZGADO CIVIL 59 - SECRETARIA Nº 89</td>
+<td class="column">BRAU CRISTINA ELENA Y OTRO C/ CASARTELLI LUIS ANGEL ESTEBAN Y OTROS S/EJECUCION HIPOTECARIA</td>
+<td class="column">EN LETRA</td>
+<td class="column">28/09/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:5:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:5:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:5:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:5:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:5:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:5:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 011709/2021</td>
+<td class="column">JUZGADO CIVIL 88</td>
+<td class="column">CALVIELLO, LORENA S/DETERMINACION DE LA CAPACIDAD</td>
+<td class="column">EN LETRA</td>
+<td class="column">27/09/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:6:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:6:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:6:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:6:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:6:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:6:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 091948/2004</td>
+<td class="column">JUZGADO CIVIL 74 - SECRETARIA Nº 104</td>
+<td class="column">CAMPOMAR JOSE ARMANDO S/SUCESION AB-INTESTATO</td>
+<td class="column">EN DESPACHO</td>
+<td class="column">24/10/2022</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:7:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:7:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:7:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:7:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:7:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:7:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CNT 006712/2023</td>
+<td class="column">JUZGADO NACIONAL DE 1RA INSTANCIA DEL TRABAJO NRO. 77</td>
+<td class="column">CARDOZO, VICTOR HUGO C/ COOPERATIVA DE VIVIENDA CMN LIMITADA Y OTROS S/DESPIDO</td>
+<td class="column">EN LETRA</td>
+<td class="column">3/10/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:8:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:8:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:8:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:8:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:8:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:8:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star-o"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 021448/2021</td>
+<td class="column">JUZGADO CIVIL 59 - SECRETARIA Nº 89</td>
+<td class="column">CASARTELLI, LUIS ANGEL ESTEBAN S/SUCESION AB-INTESTATO</td>
+<td class="column">EN LETRA</td>
+<td class="column">15/03/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:9:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:9:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:9:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:9:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:9:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:9:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 022988/2021</td>
+<td class="column">JUZGADO CIVIL 5 - SECRETARIA Nº 9</td>
+<td class="column">CENCOSUD S.A. C/ COOPERATIVA DE VIVIENDAS CMN LIMITADA Y OTRO S/ORDINARIO</td>
+<td class="column">EN LETRA</td>
+<td class="column">11/08/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:10:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:10:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:10:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:10:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:10:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:10:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 035193/2022</td>
+<td class="column">JUZGADO CIVIL 55</td>
+<td class="column">CONS JOSE MARMOL 838/40/42 C/ MOENS LUTGARDIS, PAULINA S/EJECUCION DE EXPENSAS</td>
+<td class="column">EN LETRA</td>
+<td class="column">14/08/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:11:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:11:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:11:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:11:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:11:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:11:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 035188/2022</td>
+<td class="column">JUZGADO CIVIL 91</td>
+<td class="column">CONS JOSE MARMOL 838/40/42 C/ VASQUEZ, NOEMI SUSANA S/EJECUCION DE EXPENSAS</td>
+<td class="column">EN LETRA</td>
+<td class="column">18/08/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:12:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:12:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:12:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:12:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:12:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:12:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 093222/2018</td>
+<td class="column">JUZGADO CIVIL 43 - SECRETARIA Nº 73</td>
+<td class="column">CONS PROP MARMOL 838/42 C/ BERKOWICZ, ALCIRA LUISA S/EJECUCION DE EXPENSAS</td>
+<td class="column">EN LETRA</td>
+<td class="column">10/03/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:13:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:13:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:13:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:13:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:13:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:13:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+<tr>
+<td class="column"> CIV 009159/2022</td>
+<td class="column">JUZGADO CIVIL 110</td>
+<td class="column">CONSORCIO DE PROPIETARIOS AV. DR. H. PUEYRREDON 741 C/ PAREDES, ROXANA ELIANA Y OTRO S/DAÑOS Y PERJUICIOS</td>
+<td class="column">EN LETRA</td>
+<td class="column">15/08/2023</td>
+<td class="text-center">
+    
+    <div class="btn-group" role="group" aria-label="..."><a href="#" onclick="jsf.util.chain(this,event,'PF(\'dialog\').show();','mojarra.jsfcljs(document.getElementById(\'tablaConsultaLista:tablaConsultaForm\'),{\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:14:j_idt230\':\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:14:j_idt230\'},\'\')');return false" class="btn btn-default btn-sm no-margin">
+        <i aria-hidden="true" class="fa fa-eye fa-lg"></i>
+        <span class="sr-only">visualizar expediente: </span></a>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">mas opciones</span>
+          </button>
+          <ul class="dropdown-menu text-left" style="min-width: auto; z-index:99999;">
+            <li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('tablaConsultaLista:tablaConsultaForm'),{'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:14:j_idt234':'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:14:j_idt234','conversationPropagation':'join'},'');return false">
+            <span class="sr-only">Libro digital</span>
+            <span><i class="fa fa-desktop"></i>  Libro digital</span></a>
+            </li>
+          </ul>
+      </div></td>
+<td class="text-center width-12"><a id="tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:14:agregarAfavorito:outputLink" href="#" onclick="jsf.util.chain(this,event,'$(\'#favoriteProgress\').startFavoriteProgress();','mojarra.ab(this,event,\'action\',0,\'tablaConsultaLista:tablaConsultaForm:j_idt179:dataTable:14:agregarAfavorito:outputLink\')');return false" class="favorite text-center padding-left-sm">
+<script>
+  $("#favoriteProgress").spin(false);
+</script>
+     <i aria-hidden="true" id="favoriteProgress" class="fa fa-star"></i>
+     <span></span></a></td>
+</tr>
+</tbody>
+</table>
+<div id="tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt270" class="text-center background-gradient-blue" style="width: 100%;">
+  <ul class="pagination no-margin no-padding">
+      <li class="active"><a href="#" id="tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:0:j_idt274" name="tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:0:j_idt274" onclick="RichFaces.ajax(&quot;tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:0:j_idt274&quot;,event,{&quot;parameters&quot;:{&quot;conversationPropagation&quot;:&quot;join&quot;} ,&quot;incId&quot;:&quot;1&quot;,&quot;begin&quot;:&quot;PF('dialog').show();&quot;} );return false;" class="padding-pagination margin-pagination">
+          <span>1</span></a>
+      </li>
+      <li><a href="#" id="tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:1:j_idt274" name="tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:1:j_idt274" onclick="RichFaces.ajax(&quot;tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:1:j_idt274&quot;,event,{&quot;parameters&quot;:{&quot;conversationPropagation&quot;:&quot;join&quot;} ,&quot;incId&quot;:&quot;1&quot;,&quot;begin&quot;:&quot;PF('dialog').show();&quot;} );return false;" class="padding-pagination margin-pagination">
+          <span>2</span></a>
+      </li>
+      <li><a href="#" id="tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:2:j_idt274" name="tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:2:j_idt274" onclick="RichFaces.ajax(&quot;tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:2:j_idt274&quot;,event,{&quot;parameters&quot;:{&quot;conversationPropagation&quot;:&quot;join&quot;} ,&quot;incId&quot;:&quot;1&quot;,&quot;begin&quot;:&quot;PF('dialog').show();&quot;} );return false;" class="padding-pagination margin-pagination">
+          <span>3</span></a>
+      </li>
+      <li><a href="#" id="tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:3:j_idt274" name="tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:3:j_idt274" onclick="RichFaces.ajax(&quot;tablaConsultaLista:tablaConsultaForm:j_idt268:j_idt272:3:j_idt274&quot;,event,{&quot;parameters&quot;:{&quot;conversationPropagation&quot;:&quot;join&quot;} ,&quot;incId&quot;:&quot;1&quot;,&quot;begin&quot;:&quot;PF('dialog').show();&quot;} );return false;" class="padding-pagination margin-pagination">
+          <span>4</span></a>
+      </li>
+  </ul></div><div id="tablaConsultaLista:tablaConsultaForm:j_idt301:j_idt302" class="well text-center no-padding no-margin">
+  <strong>Se han encontrado un total de 54 expediente(s).
+  </strong></div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="9029703580757104579:1213337114790337233" autocomplete="off">
+</form></div></div>
+  </div>
+</div>

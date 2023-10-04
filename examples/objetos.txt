@@ -1,0 +1,115 @@
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+Número de páginas: 4
+Primera fila, Expediente: Sistema de Consulta Web Poder Judicial de la Nación, Última fila, Expediente: CIV 009159/2022
+Primera fila, Expediente: Sistema de Consulta Web Poder Judicial de la Nación, Última fila, Expediente: CIV 009159/2022
+Primera fila, Expediente: Sistema de Consulta Web Poder Judicial de la Nación, Última fila, Expediente: CIV 089832/2022
+Primera fila, Expediente: Sistema de Consulta Web Poder Judicial de la Nación, Última fila, Expediente: COM 052350/1998
+[
+  {
+    Expediente: 'CIV 007853/2018',
+    Dependencia: 'JUZGADO CIVIL 24 - SECRETARIA Nº 48',
+    'Carátula': 'ALMAGRO, HERMAN Y OTRO S/SUCESION AB-INTESTATO',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '16/08/2023'
+  },
+  {
+    Expediente: 'CIV 068987/2021',
+    Dependencia: 'JUZGADO CIVIL 62',
+    'Carátula': 'ALTIERI, JORGE GABRIEL C/ CONS DE PROP CHARCAS 5121/25/27 S/CONSIGNACION DE EXPENSAS',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '26/09/2023'
+  },
+  {
+    Expediente: 'CIV 093246/2019',
+    Dependencia: 'JUZGADO CIVIL 20 - SECRETARIA Nº 40',
+    'Carátula': 'ARIAS, HAYDEE AZUCENA Y OTRO S/SUCESION AB-INTESTATO',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '15/03/2023'
+  },
+  {
+    Expediente: 'CIV 105046/2021',
+    Dependencia: 'JUZGADO CIVIL 104 - SECRETARIA Nº 42',
+    'Carátula': 'BELOFF, NINA MATILDE S/SUCESION AB-INTESTATO',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '29/09/2023'
+  },
+  {
+    Expediente: 'CIV 046709/2022',
+    Dependencia: 'JUZGADO CIVIL 8 - SECRETARIA Nº 15',
+    'Carátula': 'BORDON BRITEZ, EUSTACIA S/INFORMACION SUMARIA',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '5/09/2022'
+  },
+  {
+    Expediente: 'CIV 071010/1994',
+    Dependencia: 'JUZGADO CIVIL 59 - SECRETARIA Nº 89',
+    'Carátula': 'BRAU CRISTINA ELENA Y OTRO C/ CASARTELLI LUIS ANGEL ESTEBAN Y OTROS S/EJECUCION HIPOTECARIA',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '28/09/2023'
+  },
+  {
+    Expediente: 'CIV 011709/2021',
+    Dependencia: 'JUZGADO CIVIL 88',
+    'Carátula': 'CALVIELLO, LORENA S/DETERMINACION DE LA CAPACIDAD',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '27/09/2023'
+  },
+  {
+    Expediente: 'CIV 091948/2004',
+    Dependencia: 'JUZGADO CIVIL 74 - SECRETARIA Nº 104',
+    'Carátula': 'CAMPOMAR JOSE ARMANDO S/SUCESION AB-INTESTATO',
+    'Situación': 'EN DESPACHO',
+    'Últ. Act.': '24/10/2022'
+  },
+  {
+    Expediente: 'CNT 006712/2023',
+    Dependencia: 'JUZGADO NACIONAL DE 1RA INSTANCIA DEL TRABAJO NRO. 77',
+    'Carátula': 'CARDOZO, VICTOR HUGO C/ COOPERATIVA DE VIVIENDA CMN LIMITADA Y OTROS S/DESPIDO',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '3/10/2023'
+  },
+  {
+    Expediente: 'CIV 021448/2021',
+    Dependencia: 'JUZGADO CIVIL 59 - SECRETARIA Nº 89',
+    'Carátula': 'CASARTELLI, LUIS ANGEL ESTEBAN S/SUCESION AB-INTESTATO',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '15/03/2023'
+  },
+  {
+    Expediente: 'CIV 022988/2021',
+    Dependencia: 'JUZGADO CIVIL 5 - SECRETARIA Nº 9',
+    'Carátula': 'CENCOSUD S.A. C/ COOPERATIVA DE VIVIENDAS CMN LIMITADA Y OTRO S/ORDINARIO',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '11/08/2023'
+  },
+  {
+    Expediente: 'CIV 035193/2022',
+    Dependencia: 'JUZGADO CIVIL 55',
+    'Carátula': 'CONS JOSE MARMOL 838/40/42 C/ MOENS LUTGARDIS, PAULINA S/EJECUCION DE EXPENSAS',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '14/08/2023'
+  },
+  {
+    Expediente: 'CIV 035188/2022',
+    Dependencia: 'JUZGADO CIVIL 91',
+    'Carátula': 'CONS JOSE MARMOL 838/40/42 C/ VASQUEZ, NOEMI SUSANA S/EJECUCION DE EXPENSAS',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '18/08/2023'
+  },
+  {
+    Expediente: 'CIV 093222/2018',
+    Dependencia: 'JUZGADO CIVIL 43 - SECRETARIA Nº 73',
+    'Carátula': 'CONS PROP MARMOL 838/42 C/ BERKOWICZ, ALCIRA LUISA S/EJECUCION DE EXPENSAS',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '10/03/2023'
+  },
+  {
+    Expediente: 'CIV 009159/2022',
+    Dependencia: 'JUZGADO CIVIL 110',
+    'Carátula': 'CONSORCIO DE PROPIETARIOS AV. DR. H. PUEYRREDON 741 C/ PAREDES, ROXANA ELIANA Y OTRO S/DAÑOS Y PERJUICIOS',
+    'Situación': 'EN LETRA',
+    'Últ. Act.': '15/08/2023'
+  }
+]
+Cantidad total de objetos obtenidos: 15
