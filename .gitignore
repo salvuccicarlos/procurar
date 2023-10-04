@@ -3,6 +3,7 @@ examples/
 
 # Ignorar todos los archivos .log
 *.log
+*.env
 
 # Ignorar el archivo secrets.txt
 pass.txt

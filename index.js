@@ -1,4 +1,9 @@
+require('dotenv').config();
 const puppeteer = require('puppeteer');
+
+const username = process.env.USERNAME;
+const password = process.env.PASSWORD;
+
 
 (async () => {
     // Iniciar el navegador
@@ -39,8 +44,8 @@ const puppeteer = require('puppeteer');
     await iniciarSesionPage.waitForSelector('#username', {
         timeout: 5000
     }); // Espera hasta que el input con id "username" aparezca
-    await iniciarSesionPage.type('#username', '20111616036'); // Escribe en el input de usuario 
-    await iniciarSesionPage.type('#password', 'ae0708uu'); // Escribe en el input de la contraseña 
+    await iniciarSesionPage.type('#username', username); // Escribe en el input de usuario 
+    await iniciarSesionPage.type('#password', password); // Escribe en el input de la contraseña 
     await iniciarSesionPage.click('#kc-login');
 
     //Click en "Consultas" para ver expedientes
