@@ -39,8 +39,8 @@ const puppeteer = require('puppeteer');
     await iniciarSesionPage.waitForSelector('#username', {
         timeout: 5000
     }); // Espera hasta que el input con id "username" aparezca
-    await iniciarSesionPage.type('#username', '20111616036'); // Escribe en el input de usuario Alfre: 20111616036 || Carlos: 20394666360   || Padre: 20104796800
-    await iniciarSesionPage.type('#password', 'ae0708uu'); // Escribe en el input de la contraseña Alfre: ae0708uu || Carlos: 699carloS     || Padre: Grazia536358
+    await iniciarSesionPage.type('#username', '20111616036'); // Escribe en el input de usuario 
+    await iniciarSesionPage.type('#password', 'ae0708uu'); // Escribe en el input de la contraseña 
     await iniciarSesionPage.click('#kc-login');
 
     //Click en "Consultas" para ver expedientes
