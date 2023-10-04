@@ -1,0 +1,8 @@
+# Ignorar la carpeta examples
+examples/
+
+# Ignorar todos los archivos .log
+*.log
+
+# Ignorar el archivo secrets.txt
+pass.txt
